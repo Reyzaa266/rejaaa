@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For bocil aku shofiee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        button {
+            font-size: 1rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff6f61;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff4a33;
+        }
+
+        .heart {
+            font-size: 2rem;
+            color: #ff6f61;
+            margin-top: 20px;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>MAKASII YAA BOCILL!!</h1>
+    <p> Makasii yaa bocill udaa nemenin aku selamaa inii, aku gaa nyangka bisa sama kamuu, always with me yaa ❤️</p>
+    <button><a href="kenangan.html">Kenangan Kitaa</a></button> <br> <button onclick="showLove()">Pencet Sayangg</button>
+    <div class="heart" id="heart" style="display: none;">💖</div>
+
+    <script>
+        function showLove() {
+            const heart = document.getElementById('heart');
+            heart.style.display = 'block';
+            alert('Love youu SOPIII ❤️');
+        }
+    </script>
+</body>
+</html>
